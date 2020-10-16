@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">TicketingSystem</string>
+    <string-array name="cardtype">
+        <item>Card Type</item>>
+        <item>Visa Card</item>>
+        <item>Debit Card</item>>
+        <item>Visa Card</item>>
+
+    </string-array>
+</resources>
