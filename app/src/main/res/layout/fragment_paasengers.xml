@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Paasengers">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/butt"
+        android:fontFamily="@font/dm"
+        android:text="search"
+        android:textColor="#FFFFFF"
+        android:textSize="12dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/date"
+        app:layout_constraintStart_toStartOf="@+id/date"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.613"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/busno"
+        android:layout_width="157dp"
+        android:layout_height="52dp"
+        android:ems="10"
+        android:fontFamily="@font/dm"
+        android:hint="Bus No"
+        android:inputType="textPersonName"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/rootno"
+        app:layout_constraintStart_toStartOf="@+id/rootno"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.291" />
+
+    <EditText
+        android:id="@+id/rootno"
+        android:layout_width="157dp"
+        android:layout_height="52dp"
+        android:ems="10"
+        android:fontFamily="@font/dm"
+        android:hint="Root No"
+        android:inputType="number"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.131" />
+
+    <EditText
+        android:id="@+id/date"
+        android:layout_width="157dp"
+        android:layout_height="52dp"
+        android:ems="10"
+        android:fontFamily="@font/dm"
+        android:hint="Date"
+        android:textSize="12dp"
+        android:inputType="date"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintEnd_toEndOf="@+id/busno"
+        app:layout_constraintStart_toStartOf="@+id/busno"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.444" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
