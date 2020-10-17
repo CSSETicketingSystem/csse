@@ -14,6 +14,8 @@ public class LoginActivity extends AppCompatActivity {
     EditText txtname,txtpassword;
     Button button;
 
+    Button log ;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -47,5 +49,21 @@ public class LoginActivity extends AppCompatActivity {
 
             }
         });
+
+        log=findViewById(R.id.button);
+        log.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openLogin();
+            }
+        });
+
+
     }
+
+    public void openLogin(){
+        Intent intent = new Intent(LoginActivity.this, Homepage.class);
+        startActivity(intent);
+    }
+
 }

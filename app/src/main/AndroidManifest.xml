@@ -14,8 +14,9 @@
         <activity android:name=".AssignIspector" />
         <activity android:name=".AssignBus" />
         <activity android:name=".LauncherActivity" />
-        <activity android:name=".LoginActivity" />
-        <activity android:name=".RechargeActivity">
+        <activity android:name=".RechargeActivity" />
+        <activity android:name=".Homepage" />
+        <activity android:name=".LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
