@@ -11,7 +11,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class Homepage extends AppCompatActivity {
 
-    Button logout , history , account , statics , assign ;
+    Button logout , history , account , statics , assign , start ;
 
 
 
@@ -58,6 +58,23 @@ public class Homepage extends AppCompatActivity {
             }
         });
 
+        start=findViewById(R.id.startbtn);
+        start.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Homepage.this, getDistance.class);
+                startActivity(intent);
+            }
+        });
+
+     /* history=findViewById(R.id.historybtn);
+        history.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Homepage.this,<Activity>.class);
+                startActivity(intent);
+            }
+        });*/
 
 
     }

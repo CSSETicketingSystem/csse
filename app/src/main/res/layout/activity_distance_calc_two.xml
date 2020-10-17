@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e5dd9a"
+    tools:context=".DistanceCalcTwo">
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/gifImageView"
+        android:layout_width="match_parent"
+        android:layout_height="314dp"
+
+        android:src="@drawable/busstopgifcropped"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/et_source"
+        android:layout_width="348dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="89dp"
+        android:layout_marginTop="390dp"
+        android:layout_marginEnd="78dp"
+        android:layout_marginBottom="27dp"
+        android:hint="Enter Source Location"
+        android:padding="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/et_destination"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/et_destination"
+        android:layout_width="344dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="452dp"
+        android:layout_marginEnd="83dp"
+        android:layout_marginBottom="341dp"
+        android:hint="Enter Destination Location"
+        android:padding="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.43"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.254" />
+
+    <TextView
+        android:id="@+id/text_view"
+        android:layout_width="334dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="600dp"
+        android:layout_marginEnd="83dp"
+        android:layout_marginBottom="193dp"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.914" />
+
+    <Button
+        android:id="@+id/getticket"
+        android:layout_width="129dp"
+        android:layout_height="44dp"
+        android:background="@drawable/loginbtn"
+        android:text="GET TICKET"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.467"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.928" />
+
+    <Button
+        android:id="@+id/home1"
+        android:layout_width="82dp"
+        android:layout_height="36dp"
+        android:background="@drawable/loginbtn"
+        android:text="Home"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.924"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.05" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
