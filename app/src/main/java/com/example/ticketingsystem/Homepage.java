@@ -67,14 +67,14 @@ public class Homepage extends AppCompatActivity {
             }
         });
 
-     /* history=findViewById(R.id.historybtn);
+        history=findViewById(R.id.historybtn);
         history.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Homepage.this,<Activity>.class);
+                Intent intent = new Intent(Homepage.this, HistoryMain.class);
                 startActivity(intent);
             }
-        });*/
+        });
 
 
     }

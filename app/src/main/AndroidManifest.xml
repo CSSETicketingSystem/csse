@@ -13,7 +13,12 @@
         <activity android:name=".AssignDriver" />
         <activity android:name=".AssignIspector" />
         <activity android:name=".AssignBus" />
+        <activity android:name=".HistoryMain"/>
+        <activity android:name=".ViewHistory"/>
+        <activity android:name=".Tickets"/>
         <activity android:name=".LauncherActivity" >
+
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
