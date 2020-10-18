@@ -11,7 +11,7 @@
         android:layout_width="285dp"
         android:layout_height="62dp"
         android:background="@drawable/button_style"
-        android:text="CONFORM"
+        android:text="CONFIRM"
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"

@@ -8,13 +8,12 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class LoginActivity extends AppCompatActivity {
     TextView txtsignup;
     EditText txtname,txtpassword;
     Button button;
-
-    Button log ;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +29,8 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
         button=findViewById(R.id.button);
+        txtname=findViewById(R.id.editText2);
+        txtpassword=findViewById(R.id.editText);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -45,25 +46,11 @@ public class LoginActivity extends AppCompatActivity {
                     txtpassword.setError("Enter the Password");
                     txtpassword.requestFocus();
                     isValid=false;
-                }
-
+                }if(isValid){
+                    Intent intent = new Intent(LoginActivity.this, Homepage.class);
+                Toast.makeText(LoginActivity.this, "Logged In Successfully!!!", Toast.LENGTH_LONG).show();
+                    startActivity(intent);}
             }
         });
-
-        log=findViewById(R.id.button);
-        log.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                openLogin();
-            }
-        });
-
-
     }
-
-    public void openLogin(){
-        Intent intent = new Intent(LoginActivity.this, Homepage.class);
-        startActivity(intent);
-    }
-
 }

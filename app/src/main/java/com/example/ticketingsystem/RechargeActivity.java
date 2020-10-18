@@ -30,7 +30,7 @@ public class RechargeActivity extends AppCompatActivity {
                 String Name = name.getText().toString().trim();
                 String Cno = cardno.getText().toString().trim();
                 String Amount=amount.getText().toString().trim();
-                
+
                 boolean isValid=true;
 
                 if(Name.isEmpty()){

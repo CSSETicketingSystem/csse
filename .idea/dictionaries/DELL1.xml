@@ -2,8 +2,12 @@
   <dictionary name="DELL1">
     <words>
       <w>cardtype</w>
+      <w>ispector</w>
       <w>letsgo</w>
       <w>signup</w>
+      <w>txtname</w>
+      <w>txtpassword</w>
+      <w>txtsignup</w>
     </words>
   </dictionary>
 </component>

@@ -47,6 +47,7 @@
         android:layout_width="290dp"
         android:layout_height="56dp"
         android:background="@drawable/button_style"
+        android:textStyle="bold"
         android:text="LET'S GO"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

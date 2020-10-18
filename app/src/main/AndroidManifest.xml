@@ -13,18 +13,20 @@
         <activity android:name=".AssignDriver" />
         <activity android:name=".AssignIspector" />
         <activity android:name=".AssignBus" />
-        <activity android:name=".LauncherActivity" />
+        <activity android:name=".LauncherActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity android:name=".RechargeActivity" />
         <activity android:name=".Homepage" />
         <activity android:name=".DistanceCalcTwo" />
         <activity android:name=".getDistance" />
         <activity android:name=".Ticket" />
         <activity android:name=".LoginActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity android:name=".AccountBalanceActivity" />
         <activity android:name=".RegisterActivity" />
