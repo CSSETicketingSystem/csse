@@ -2,6 +2,7 @@ package com.example.ticketingsystem;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -24,11 +25,12 @@ public class RechargeActivity extends AppCompatActivity {
         confirm.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(RechargeActivity.this, "Recharged Successfully!!!", Toast.LENGTH_LONG).show();
+
 
                 String Name = name.getText().toString().trim();
                 String Cno = cardno.getText().toString().trim();
                 String Amount=amount.getText().toString().trim();
+                
                 boolean isValid=true;
 
                 if(Name.isEmpty()){
@@ -45,6 +47,10 @@ public class RechargeActivity extends AppCompatActivity {
                     amount.setError("Enter the Amount");
                     amount.requestFocus();
                     isValid=false;
+                }if(isValid){
+                    Toast.makeText(RechargeActivity.this, "Recharged Successfully!!!", Toast.LENGTH_LONG).show();
+                    Intent intent = new Intent(RechargeActivity.this, AccountBalanceActivity.class);
+                    startActivity(intent);
                 }
             }
         });
